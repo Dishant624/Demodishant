@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/imageprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/car1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="30dp"
+                    android:src="@drawable/ic_edit_black_24dp" />
+            </FrameLayout>
+
+            <GridLayout
+                android:id="@+id/lnrImages"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/emailll"
+                android:columnCount="3"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:rowCount="3">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/addimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    app:cardCornerRadius="2dp"
+                    app:cardBackgroundColor="#f5f3f4"
+                    android:background="@drawable/doshline"
+                    android:textAllCaps="false" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin_20"
+                        android:src="@drawable/ic_add_circle_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textSize="12sp"
+                        android:text="Add Car Image"/>
+                </android.support.v7.widget.CardView>
+
+                <!--<Button-->
+                    <!--android:id="@+id/addimage2"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_below="@+id/emailll"-->
+                    <!--android:layout_column="1"-->
+                    <!--android:layout_margin="4dp"-->
+                    <!--android:layout_row="0"-->
+                    <!--android:background="@drawable/doshline"-->
+                    <!--android:text="Add Image"-->
+                    <!--android:textAllCaps="false" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/addimage3"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_below="@+id/emailll"-->
+                    <!--android:layout_column="2"-->
+                    <!--android:layout_margin="4dp"-->
+                    <!--android:layout_row="0"-->
+                    <!--android:background="@drawable/doshline"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Add Image"-->
+                    <!--android:textAllCaps="false" />-->
+
+            </GridLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
